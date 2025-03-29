@@ -1,4 +1,4 @@
-# Synthetic CMS Medicare Claims Dashboard
+# Synthetic CMS Medicare Claims - Chronic Kidney Disease Analysis
 
 This project is a capstone demonstration for a Data Engineering initiative that leverages synthetic CMS data. The solution ingests data into Google Cloud Storage (GCS), processes and enriches it using dbt, loads it into Google BigQuery, and visualizes key insights via a Looker Studio dashboard. The focus is on analyzing the cost of claims paid over 10 years for beneficiaries with chronic kidney disease.
 
@@ -27,27 +27,60 @@ This project is a capstone demonstration for a Data Engineering initiative that 
 
 ---
 
+## Glossary
+
+- **HHA (Home Health Agency):** Organizations that provide healthcare services to patients in their homes.
+- **SNF (Skilled Nursing Facility):** Facilities that offer round-the-clock nursing care and rehabilitation services.
+- **DME (Durable Medical Equipment):** Equipment and supplies that provide therapeutic benefits to patients, such as wheelchairs or oxygen tanks.
+- **Carrier:** Refers to claims data related to professional services, often encompassing physician, laboratory, and other outpatient services under Medicare Fee-for-Service.
+- **Inpatient:** Claims associated with hospital stays, capturing details of admission, treatment, and discharge for patients receiving inpatient care.
+- **Outpatient:** Claims data from services provided in outpatient settings, such as clinics or outpatient surgery centers, where patients do not require an overnight hospital stay.
+- **Hospice:** Claims data related to hospice care, which is provided to terminally ill patients focused on comfort and quality of life.
+
+---
+
 ## Architecture & Workflow
 
 ### Data Ingestion & Processing
 
-1. **Data Extraction:**  
-   Selenium-based scripts scrape the CMS website for synthetic claims URLs. Downloaded CSV/ZIP files are extracted and converted to Parquet using Python (with Pandas and PyArrow).
+1. **Data Extraction:**
+   - **Web Scraping:**  
+     Selenium is used to automate a headless Chrome browser that connects to a remote WebDriver. The script navigates to the CMS data portal and extracts URLs for synthetic claims data. It intelligently filters out unwanted sections (e.g., "All FFS Claims" and "All Beneficiary Years") and separates the URLs into two categories: one for claims and one for beneficiary data.
+   - **Error Handling:**  
+     The script includes timeouts and exception handling to ensure that if the expected elements are not found, the process exits gracefully.
 
-2. **Cloud Storage & Loading:**  
-   The converted files are uploaded to a designated GCS bucket. Batch pipelines then load the data into BigQuery and create external tables.
+2. **File Download, Conversion, and Upload:**
+   - **Downloading Files:**  
+     The ETL script downloads files using HTTP requests. It supports both CSV files and ZIP archives. In the case of a ZIP file, it extracts CSV files contained within.
+   - **Conversion to Parquet:**  
+     Once a CSV file is downloaded, it is converted to the Parquet format using PyArrow. The conversion process infers the schema from a sample of the data and processes the file in chunks, ensuring that large files can be handled efficiently.
+   - **Uploading to GCS:**  
+     After conversion, the Parquet file is uploaded to a specified Google Cloud Storage (GCS) bucket. The upload process includes logic to organize files into appropriate folder structures based on file type and execution timestamp.
 
-3. **Transformation with dbt:**  
-   Data transformation is handled using a layered dbt architecture:
-   - **Staging Models:** Clean and standardize raw data.
-   - **Intermediate Models:** Enrich data by joining with reference tables (ICD-10, HCPCS, type-of-bill codes) and applying custom macros.
-   - **Core Models:** Aggregate the enriched data into final, analytics-ready tables.
+3. **BigQuery Processing:**
+   - **Listing and Processing Files:**  
+     The ETL process lists subdirectories in the GCS bucket to identify the uploaded files.
+   - **Table Creation:**  
+     The script uses the BigQueryHook (via Airflow) to create external tables in BigQuery from the Parquet files.
+   - **Deduplication & Merging:**  
+     Temporary tables are created with a generated unique row ID (using an MD5 hash of selected columns). These temporary tables are then merged into main BigQuery tables to ensure that the data is deduplicated and consistent.
 
-4. **Workflow Orchestration:**  
-   An Apache Airflow DAG orchestrates the overall ETL process, while Terraform scripts provision the necessary GCP resources.
+4. **Workflow Orchestration:**
+   - **Airflow DAG:**  
+     An Airflow DAG named `cms_ingestion_stream` orchestrates the entire pipeline. It has two main tasks:
+     - **Task 1:** Runs the ETL process that scrapes the CMS portal, downloads and converts files, and uploads them to GCS.
+     - **Task 2:** Triggers the BigQuery processing that creates/updates tables from the uploaded Parquet files.
+   - **Task Dependency:**  
+     The workflow is set so that the data upload task runs before the BigQuery table creation task, ensuring proper sequencing.
 
-5. **Visualization:**  
-   Final data tables in BigQuery serve as the source for the Looker Studio dashboard, which provides interactive visualizations of claim cost trends.
+### Transformation & Downstream Processing
+
+- **dbt Modeling:**  
+  Data transformation is managed by dbt, which is structured into staging, intermediate, and core models. This layer handles data cleaning, enrichment (through joins and custom macros), and aggregation into final analytics-ready tables in BigQuery.
+
+- **Visualization:**  
+  The final processed data tables in BigQuery  are connected to a Looker Studio dashboard, enabling interactive exploration of claim cost trends over 10 years.
+
 
 ---
 
@@ -164,8 +197,8 @@ Core models aggregate enriched data from the intermediate layer into final, anal
 3. **Update Terraform Variables:**
 - Edit `terraform/variables.tf` with your credentials, project, region, dataset, and bucket names.
 
-4. ** Provision Infrastructure:**
-In the `terraform` directory, run:
+4. **Provision Infrastructure:**
+- In the `terraform` directory, run:
    ```bash
    terraform init
    terraform plan
