@@ -222,6 +222,9 @@ Core models aggregate enriched data from the intermediate layer into final, anal
 ## Visualization:
 - **Access the Looker Studio dashboard here:** [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/bc4003c1-f55e-4b10-a117-d3ee14734119)
 - Screenshot previews (`dashboard_1.png` and `dashboard_2.png`) are available in the repository.
+- ![dashboard_1](dashboard_1.png)
+- ![dashboard_2](dashboard_2.png)
+
 
 ## Reproducibility & Future Enhancements
 
