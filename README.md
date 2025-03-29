@@ -186,8 +186,8 @@ Core models aggregate enriched data from the intermediate layer into final, anal
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/Adaora-AA/ideal-tribble.git
-   cd ideal-tribble
+   git clone https://github.com/Adaora-AA/Synthetic-CMS-Medicare-Claims---Chronic-Kidney-Disease-Analysis.git
+   cd Synthetic-CMS-Medicare-Claims---Chronic-Kidney-Disease-Analysis
 
 2. **Configure Google Cloud Resources:**
 - Create a GCP project.
