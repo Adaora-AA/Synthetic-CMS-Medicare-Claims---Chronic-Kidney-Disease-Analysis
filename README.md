@@ -191,7 +191,7 @@ Core models aggregate enriched data from the intermediate layer into final, anal
 
 2. **Configure Google Cloud Resources:**
 - Create a GCP project.
-- Set up a service account** with roles for BigQuery, GCS, and Dataproc.
+- Set up a service account with roles for BigQuery, and GCS.
 - Download the service account JSON key.
 
 3. **Update Terraform Variables:**
