@@ -1,0 +1,100 @@
+Code,Description
+01 ," Pharmacy — facility or location where drugs and other medically related items and services are sold, dispensed, or otherwise provided directly to patients"
+02 , Telehealth provided other than in patient’s home (eff. 1/2017)
+03 , School — facility whose primary purpose is education
+04 ," Homeless shelter — a facility or location whose primary purpose is to provide temporary housing to homeless individuals (e.g., emergency shelters, individual or family shelters)"
+05 ," Indian health service — free-standing facility. A facility or location, owned and operated by the  Indian health service, which provides diagnostic, therapeutic (surgical and non-surgical), and rehabilitation services to American Indians and Alaska Natives who do not require hospitalization"
+06 ," Indian health service — provider-based Facility. A facility or location, owned and operated by the Indian health service, which provides diagnostic, therapeutic (surgical and non-surgical), and rehabilitation services rendered by, or under the supervision of, physicians to American Indians and Alaska Natives admitted as inpatients or outpatients"
+07 ," Tribal 638 — free-standing facility. A facility or location owned and operated by a federally recognized American Indian or Alaska Native tribe or tribal organization under a 638 agreement, which provides diagnostic, therapeutic (surgical and non-surgical), and rehabilitation services to tribal members who do not require hospitalization"
+08 ," Tribal 638 provider-based facility — facility or location owned and operated by a federally recognized American Indian or Alaska Native tribe or tribal organization under a 638 agreement, which provides diagnostic, therapeutic (surgical and non-surgical), and rehabilitation services to tribal members admitted as inpatients or outpatients"
+09 ," Prison/Correctional facility — prison, jail, reformatory, work farm, detention center, or any other similar facility maintained by either federal, state, or local authorities for the purpose of confinement or rehabilitation of adult or juvenile criminal offenders"
+10 , Unassigned. N/A
+11 ," Office — location, other than a hospital, skilled nursing facility (SNF), military treatment facility,community health center, state or local public health clinic, or intermediate care facility (ICF),where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis"
+12 ," Home — location, other than a hospital or other facility, where the patient receives care in a private residence"
+13 ," Assisted-living facility — congregate residential facility with self-contained living units providing assessment of each resident's needs and on-site support 24 hours a day, seven days a week, with the capacity to deliver or arrange for services including some health care and other services"
+14 ," Group home — residence, with shared living areas, where clients receive supervision and other services such as social and/or behavioral services, custodial service, and minimal services (e.g.,medication administration)"
+15 ," Mobile unit — facility/unit that moves from place-to-place equipped to provide preventive,screening, diagnostic, and/or treatment services"
+16 , Temporary lodging (eff. 4/2008)
+17 , Walk-in retail health clinic. (No later than 5/2010)
+18 ," Place of employment — worksite. A location, not described by any other POS code, owned, or operated by a public or private entity where the patient is employed, and where a health professional provides on-going or episodic occupational medical, therapeutic, or rehabilitative services to the individual. (This code is available for use eff. January 1, 2013, but no later than May 1, 2013)"
+19 , Off campus — outpatient hospital. (eff. 1/2016)
+20 ," Urgent care facility — location, distinct from a hospital emergency room, an office, or a clinic,whose purpose is to diagnose and treat illness or injury for unscheduled, ambulatory patients seeking immediate medical attention"
+21 ," Inpatient hospital — facility, other than psychiatric, which primarily provides diagnostic,therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions"
+22 ," Outpatient hospital — portion of a hospital which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization"
+23 , Emergency room — hospital. A portion of a hospital where emergency diagnosis and treatment of illness or injury is provided
+24 ," Ambulatory surgical center — freestanding facility, other than a physician's office, where surgical and diagnostic services are provided on an ambulatory basis"
+25 ," Birthing center — facility, other than a hospital's maternity facilities or a physician's office, which provides a setting for labor, delivery, and immediate post-partum care as well as immediate care of newborn infants"
+26 , Military treatment facility — medical facility operated by one or more of the Uniformed Services.Military treatment facility (MTF) also refers to certain former U.S. Public Health Service (USPHS) facilities now designated as Uniformed Service Treatment Facilities (USTF)
+27 , Outreach site/Street (eff. 10/2023)
+28 , Unassigned. N/A
+29 , Unassigned. N/A
+30 , Unassigned. N/A
+31 ," Skilled nursing facility — facility which primarily provides inpatient skilled nursing care and related services to patients who require medical, nursing, or rehabilitative services but does not provide the level of care or treatment available in a hospital"
+32 ," Nursing facility — facility which primarily provides to residents skilled nursing care and related services for the rehabilitation of injured, disabled, or sick persons, or, on a regular basis, healthrelated care services above the level of custodial care to other than mentally retarded individuals"
+33 ," Custodial care facility — facility which provides room, board, and other personal assistance services, generally on a long-term basis, and which does not include a medical component"
+34 ," Hospice. A facility, other than a patient's home, in which palliative and supportive care forterminally ill patients and their families are provided"
+35 , Unassigned. N/A
+36 , Unassigned. N/A
+37 , Unassigned. N/A
+38 , Unassigned. N/A
+39 , Unassigned. N/A
+40 , Unassigned. N/A
+41 ," Ambulance — land. A land vehicle specifically designed, equipped, and staffed for lifesaving and transporting the sick or injured"
+42 ," Ambulance — air or water. An air or water vehicle specifically designed, equipped, and staffed for lifesaving and transporting the sick or injured"
+43 , Unassigned. N/A
+44 , Unassigned. N/A
+45 , Unassigned. N/A
+46 , Unassigned. N/A
+47 , Unassigned. N/A
+48 , Unassigned. N/A
+49 ," Independent clinic — location, not part of a hospital and not described by any other Place of Service code, that is organized and operated to provide preventive, diagnostic, therapeutic,rehabilitative, or palliative services to outpatients only. (eff. 10/2003)"
+50 , Federal Qualified Health Center — facility located in a medically underserved area that provides Medicare beneficiaries preventive primary medical care under the general direction of a physician
+51 ," Inpatient psych facility — facility that provides inpatient psychiatric services for the diagnosis and treatment of mental illness on a 24-hour basis, by or under the supervision of a physician "
+52 ," Psychiatric facility — partial hospitalization. A facility for the diagnosis and treatment of mental illness that provides a planned therapeutic program for patients who do not require full time hospitalization, but who need broader programs than are possible from outpatient visits to a hospital-based or hospital-affiliated facility"
+53 ," Community mental health center — facility that provides the following services: outpatient services, including specialized outpatient services for children, the elderly, individuals who are chronically ill, and residents of the CMHC's mental health services area who have been discharged from inpatient treatment at a mental health facility; 24 hour a day emergency care services; day treatment, other partial hospitalization services, or psychosocial rehabilitation services; screening for patients being considered for admission to state mental health facilities to determine the appropriateness of such admission; and consultation and education services"
+54 , Intermediate care/Mentally retarded facility — facility which primarily provides health-related care and services above the level of custodial care to mentally retarded individuals but does not provide the level of care or treatment available in a hospital or SNF
+55 ," Residential substance abuse treatment facility — facility which provides treatment for substance (alcohol and drug) abuse to live-in residents who do not require acute medical care. Services include individual and group therapy and counseling, family counseling, laboratory tests, drugs and supplies, psychological testing, and room and board"
+56 , Psychiatric residential treatment center — facility or distinct part of a facility for psychiatric care which provides a total 24-hour therapeutically planned and professionally staffed group living and learning environment
+57 ," Non-residential substance abuse treatment facility — location which provides treatment for substance (alcohol and drug) abuse on an ambulatory basis. Services include individual and group therapy and counseling, family counseling, laboratory tests, drugs and supplies, and psychological testing"
+58 , Non-residential opioid treatment facility (eff. 1/2020)
+59 , Unassigned. N/A
+60 ," Mass immunization center — location where providers administer pneumococcal pneumonia and influenza virus vaccinations and submit these services as electronic media claims, paper claims, or using the roster billing method. This generally takes place in a mass immunization setting, such as, a public health center, pharmacy, or mall but may include a physician office setting"
+61 ," Comprehensive inpatient rehabilitation facility — facility that provides comprehensive rehabilitation services under the supervision of a physician to inpatients with physical disabilities.Services include physical therapy, occupational therapy, speech pathology, social or psychological services, and orthotics and prosthetics services"
+62 ," Comprehensive outpatient rehabilitation facility — facility that provides comprehensive rehabilitation services under the supervision of a physician to outpatients with physical disabilities.Services include physical therapy, occupational therapy, and speech pathology services"
+63 , Unassigned. N/A
+64 , Unassigned. N/A
+65 ," End-stage renal disease treatment facility — facility other than a hospital, which provides dialysis treatment, maintenance, and/or training to patients or caregivers on an ambulatory or homecare basis"
+66 , Unassigned. N/A
+67 , Unassigned. N/A
+68 , Unassigned. N/A
+69 , Unassigned. N/A
+70 , Unassigned. N/A
+71 , Public health clinic — facility maintained by either state or local health departments that provides ambulatory primary medical care under the general direction of a physician
+72 , Rural health clinic — certified facility which is located in a rural medically underserved area that provides ambulatory primary medical care under the general direction of a physician
+73 , Unassigned. N/A
+74 , Unassigned. N/A
+75 , Unassigned. N/A
+76 , Unassigned. N/A
+77 , Unassigned. N/A
+78 , Unassigned. N/A
+79 , Unassigned. N/A
+80 , Unassigned. N/A
+81 , Independent laboratory — laboratory certified to perform diagnostic and/or clinical tests independent of an institution or a physician's office
+82 , Unassigned. N/A
+83 , Unassigned. N/A
+84 , Unassigned. N/A
+85 , Unassigned. N/A
+86 , Unassigned. N/A
+87 , Unassigned. N/A
+88 , Unassigned. N/A
+89 , Unassigned. N/A
+90 , Unassigned. N/A
+91 , Unassigned. N/A
+92 , Unassigned. N/A
+93 , Unassigned. N/A
+94 , Unassigned. N/A
+95 , Unassigned. N/A
+96 , Unassigned. N/A
+97 , Unassigned. N/A
+98 , Unassigned. N/A
+99 , Other place of service — other place of service not identified above

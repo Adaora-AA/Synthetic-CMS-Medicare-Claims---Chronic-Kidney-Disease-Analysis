@@ -1,0 +1,9 @@
+version: 2
+
+macros:
+  - name: nch_clm_type_description
+  - name: line_cms_type_srvc_cd_description
+  - name: ptnt_dschrg_stus_cd_desc
+  - name: ptnt_dschrg_stus_ind_desc
+  - name: state_description
+  - name: race_description

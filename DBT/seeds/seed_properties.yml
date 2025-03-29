@@ -1,0 +1,7 @@
+version: 2
+
+seeds: 
+  - name: icd_10_codes
+  - name: line_place_of_srvc_codes
+  - name: cpt_hcpcs_codes
+  - name: type_of_bill_codes

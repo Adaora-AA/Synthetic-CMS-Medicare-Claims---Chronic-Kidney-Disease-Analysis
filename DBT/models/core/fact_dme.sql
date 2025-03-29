@@ -1,0 +1,78 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+with dme_data as (
+    select *
+    from {{ ref('int_dme') }}
+)
+select
+    bene_id,
+    clm_id,
+    nch_near_line_rec_ident_cd,
+    nch_clm_type_cd,
+    claim_type_desc,
+    clm_from_dt,
+    clm_thru_dt,
+    nch_wkly_proc_dt,
+    carr_clm_entry_cd,
+    clm_disp_cd,
+    carr_num,
+    carr_clm_pmt_dnl_cd,
+    clm_pmt_amt,
+    carr_clm_prmry_pyr_pd_amt,
+    carr_clm_prvdr_asgnmt_ind_sw,
+    nch_clm_prvdr_pmt_amt,
+    nch_clm_bene_pmt_amt,
+    nch_carr_clm_sbmtd_chrg_amt,
+    nch_carr_clm_alowd_amt,
+    carr_clm_cash_ddctbl_apld_amt,
+    carr_clm_hcpcs_yr_cd,
+    prncpal_dgns_cd,
+    prncpal_dgns_vrsn_cd,
+    prncpal_dgns_code_desc,
+    rfr_physn_upin,
+    rfr_physn_npi,
+    clm_clncl_tril_num,
+    line_num,
+    tax_num,
+    prvdr_spclty,
+    prtcptng_ind_cd,
+    line_srvc_cnt,
+    line_cms_type_srvc_cd,
+    line_type_srvc_cd_desc,
+    line_place_of_srvc_cd,
+    line_place_of_srvc_cd_desc,
+    line_1st_expns_dt,
+    line_last_expns_dt,
+    hcpcs_cd,
+    hcpcs_cd_desc,
+    betos_cd,
+    line_nch_pmt_amt,
+    line_bene_pmt_amt,
+    line_prvdr_pmt_amt,
+    line_bene_ptb_ddctbl_amt,
+    line_bene_prmry_pyr_cd,
+    line_bene_prmry_pyr_pd_amt,
+    line_prmry_alowd_chrg_amt,
+    line_sbmtd_chrg_amt,
+    line_alowd_chrg_amt,
+    line_prcsg_ind_cd,
+    line_pmt_80_100_cd,
+    line_service_deductible,
+    line_icd_dgns_vrsn_cd,
+    prvdr_num,
+    prvdr_npi,
+    dmerc_line_prcng_state_cd,
+    prvdr_state_cd,
+    prvdr_state,
+    dmerc_line_supplr_type_cd,
+    dmerc_line_scrn_svgs_amt,
+    dmerc_line_mtus_cnt,
+    dmerc_line_mtus_cd,
+    line_hct_hgb_rslt_num,
+    line_ndc_cd
+    
+from dme_data

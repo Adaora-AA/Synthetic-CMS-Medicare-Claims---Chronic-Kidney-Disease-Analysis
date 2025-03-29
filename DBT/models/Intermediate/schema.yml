@@ -1,0 +1,13 @@
+version: 2
+
+
+models:
+    - name: int_carrier
+    - name: int_icd_10_codes
+    - name: int_cpt_hcpcs_codes
+    - name: int_dme
+    - name: int_hha
+    - name: int_hospice
+    - name: int_inpatient
+    - name: int_outpatient
+    - name: int_snf

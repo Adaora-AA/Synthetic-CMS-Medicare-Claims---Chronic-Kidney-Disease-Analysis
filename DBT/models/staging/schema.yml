@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'adaora') }}" 
+    schema: "{{ env_var('DBT_SCHEMA', 'cms_data') }}"
+      
+    tables:
+      - name: beneficiary_2015
+      - name: beneficiary_2016
+      - name: beneficiary_2017
+      - name: beneficiary_2018
+      - name: beneficiary_2019
+      - name: beneficiary_2020
+      - name: beneficiary_2021
+      - name: beneficiary_2022
+      - name: beneficiary_2023
+      - name: beneficiary_2024
+      - name: beneficiary_2025
+      - name: carrier
+      - name: dme
+      - name: hha
+      - name: hospice
+      - name: snf
+      - name: outpatient
+      - name: inpatient
+
+models:
+    - name: stg_bene_2015
+    - name: stg_bene_2016
+    - name: stg_bene_2017
+    - name: stg_bene_2018
+    - name: stg_bene_2019
+    - name: stg_bene_2020
+    - name: stg_bene_2021
+    - name: stg_bene_2022
+    - name: stg_bene_2023
+    - name: stg_bene_2024
+    - name: stg_bene_2025
+    - name: stg_carrier
+    - name: stg_dme
+    - name: stg_hha
+    - name: stg_hospice
+    - name: stg_snf
+    - name: stg_outpatient
+    - name: stg_inpatient

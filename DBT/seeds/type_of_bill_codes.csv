@@ -1,0 +1,62 @@
+facilty_type_cd,facility_type,claim_service_type_cd,claim_service_type
+1,Hospital,1, Inpatient
+1,Hospital,2, Inpatient or home health (covered on Part B)
+1,Hospital,3, Outpatient (or HHA _ covered on Part A)
+1,Hospital,4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+1,Hospital,5, Intermediate care _ level I
+1,Hospital,6, Intermediate care _ level II
+1,Hospital,7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+1,Hospital,8, Swing bed
+2,Skilled nursing facility (SNF),1, Inpatient
+2,Skilled nursing facility (SNF),2, Inpatient or home health (covered on Part B)
+2,Skilled nursing facility (SNF),3, Outpatient (or HHA _ covered on Part A)
+2,Skilled nursing facility (SNF),4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+2,Skilled nursing facility (SNF),5, Intermediate care _ level I
+2,Skilled nursing facility (SNF),6, Intermediate care _ level II
+2,Skilled nursing facility (SNF),7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+2,Skilled nursing facility (SNF),8, Swing bed
+3,Home health agency (HHA),1, Inpatient
+3,Home health agency (HHA),2, Inpatient or home health (covered on Part B)
+3,Home health agency (HHA),3, Outpatient (or HHA _ covered on Part A)
+3,Home health agency (HHA),4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+3,Home health agency (HHA),5, Intermediate care _ level I
+3,Home health agency (HHA),6, Intermediate care _ level II
+3,Home health agency (HHA),7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+3,Home health agency (HHA),8, Swing bed
+4,Religious Non-medical (hospital),1, Inpatient
+4,Religious Non-medical (hospital),2, Inpatient or home health (covered on Part B)
+4,Religious Non-medical (hospital),3, Outpatient (or HHA _ covered on Part A)
+4,Religious Non-medical (hospital),4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+4,Religious Non-medical (hospital),5, Intermediate care _ level I
+4,Religious Non-medical (hospital),6, Intermediate care _ level II
+4,Religious Non-medical (hospital),7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+4,Religious Non-medical (hospital),8, Swing bed
+6,Intermediate Care (IMC),1, Inpatient
+6,Intermediate Care (IMC),2, Inpatient or home health (covered on Part B)
+6,Intermediate Care (IMC),3, Outpatient (or HHA _ covered on Part A)
+6,Intermediate Care (IMC),4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+6,Intermediate Care (IMC),5, Intermediate care _ level I
+6,Intermediate Care (IMC),6, Intermediate care _ level II
+6,Intermediate Care (IMC),7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+6,Intermediate Care (IMC),8, Swing bed
+6,Hospital,1, Inpatient
+6,Hospital,2, Inpatient or home health (covered on Part B)
+6,Hospital,3, Outpatient (or HHA _ covered on Part A)
+6,Hospital,4," Other (Part B) _ (includes HHA medical and other health services,e.g., SNF osteoporosis injectable drugs)"
+6,Hospital,5, Intermediate care _ level I
+6,Hospital,6, Intermediate care _ level II
+6,Hospital,7, Subacute inpatient (revenue code 019X required) (formerly Intermediate care _ level III)
+6,Hospital,8, Swing bed
+7,Clinic services or hospital-based renal dialysis facility,1, Rural Health Clinic (RHC)
+7,Clinic services or hospital-based renal dialysis facility,2, Hospital based or independent renal dialysis facility
+7,Clinic services or hospital-based renal dialysis facility,3, Free-standing provider based federally qualified health center (FQHC)
+7,Clinic services or hospital-based renal dialysis facility,4, Other Rehabilitation Facility (ORF)
+7,Clinic services or hospital-based renal dialysis facility,5, Comprehensive Rehabilitation Center (CORF)
+7,Clinic services or hospital-based renal dialysis facility,6, Community Mental Health Center (CMHC)
+7,Clinic services or hospital-based renal dialysis facility,7, Federally Qualified Health Center (FQHC)
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",1, Hospice (non-hospital based)
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",2, Hospice (hospital based)
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",3, Ambulatory surgical center (ASC) in hospital outpatient department
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",4, Freestanding birthing center
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",5, Critical Access hospital _ outpatient services
+8,"Ambulatory Surgery Center (ASC) or other special facility (e.g., hospice)",7, Freestanding Non-residential Opioid TreatmentPrograms (eff. 1/2021)

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: fact_bene
+    - name: fact_carrier
+    - name: fact_dme
+    - name: fact_hha
+    - name: fact_hospice
+    - name: fact_snf
+    - name: fact_outpatient
+    - name: fact_inpatient

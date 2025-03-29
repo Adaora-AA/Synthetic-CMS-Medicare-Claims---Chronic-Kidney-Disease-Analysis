@@ -1,0 +1,70 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+with hha_data as (
+    select *
+    from {{ ref('int_hha') }}
+)
+select
+    bene_id,
+    clm_id,
+    nch_near_line_rec_ident_cd,
+    nch_clm_type_cd,
+    claim_type_desc,
+    clm_from_dt,
+    clm_thru_dt,
+    nch_wkly_proc_dt,
+    fi_clm_proc_dt,
+    prvdr_num,
+    clm_fac_type_cd,
+    facility_type,
+    clm_srvc_clsfctn_type_cd,
+    claim_service_type,
+    clm_freq_cd,
+    fi_num,
+    clm_mdcr_non_pmt_rsn_cd,
+    clm_pmt_amt,
+    nch_prmry_pyr_clm_pd_amt,
+    nch_prmry_pyr_cd,
+    prvdr_state_cd,
+    prvdr_state,
+    org_npi_num,
+    at_physn_upin,
+    at_physn_npi,
+    ptnt_dschrg_stus_cd,  
+    patient_discharge_status,
+    clm_pps_ind_cd,
+    clm_tot_chrg_amt,
+    prncpal_dgns_cd,  
+    prncpal_dgns_code_desc,
+    fst_dgns_e_cd,
+    fst_dgns_e_code_desc,
+    clm_hha_lupa_ind_cd,
+    clm_hha_rfrl_cd,
+    clm_hha_tot_visit_cnt,
+    clm_admsn_dt,
+    claim_query_code,
+    clm_line_num,
+    rev_cntr,
+    rev_cntr_dt,
+    rev_cntr_1st_ansi_cd,
+    rev_cntr_apc_hipps_cd,
+    hcpcs_cd,
+    hcpcs_cd_desc,
+    rev_cntr_pmt_mthd_ind_cd,
+    rev_cntr_unit_cnt,
+    rev_cntr_rate_amt,
+    rev_cntr_pmt_amt_amt,
+    rev_cntr_tot_chrg_amt,
+    rev_cntr_ncvrd_chrg_amt,
+    rev_cntr_ddctbl_coinsrnc_cd,
+    rev_cntr_stus_ind_cd,
+    rev_cntr_ndc_qty,
+    rev_cntr_ndc_qty_qlfr_cd,
+    rndrng_physn_upin,
+    rndrng_physn_npi
+
+ from hha_data
