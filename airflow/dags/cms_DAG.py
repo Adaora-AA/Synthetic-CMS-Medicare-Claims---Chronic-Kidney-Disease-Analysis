@@ -20,7 +20,7 @@ default_args = {
 dag = DAG(
     "cms_ingestion_stream",
     default_args=default_args,
-    schedule= None, #"0 0 L * *",  # Runs at 00:00 on the last day of every month
+    schedule= "0 0 L * *",  # Runs at 00:00 on the last day of every month
     start_date=datetime(2025, 2, 23),
     end_date=datetime(2025, 4, 26),
     catchup=False,
